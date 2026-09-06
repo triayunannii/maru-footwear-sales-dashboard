@@ -12,6 +12,8 @@ This project analyzes transaction data to evaluate sales performance, revenue co
 
 The analysis is presented through an interactive dashboard built using **Google Looker Studio**, allowing users to explore sales performance through marketplace, product category, refund status, product, and date filters.
 
+The dashboard includes an **interactive Date Range filter**, allowing users to analyze different periods within the dataset, such as February 2025, March 2025, or the full February–March 2025 period.
+
 ---
 
 ## 🎯 Business Objectives
@@ -19,10 +21,10 @@ The analysis is presented through an interactive dashboard built using **Google 
 The dashboard was developed to answer the following business questions:
 
 1. Which e-commerce marketplace contributes the most revenue?
-2. How much refund value was generated during the analysis period?
-3. How did daily revenue change throughout March 2025, and when did sales peaks occur?
-4. Which product categories generated the highest quantity of sales?
-5. Which products had the highest quantity sold?
+2. How much refund value was generated during the selected period?
+3. How does daily revenue change over time, and when do sales peaks occur?
+4. Which product categories have the highest quantity of sales?
+5. Which products have the highest quantity sold?
 
 ---
 
@@ -30,7 +32,7 @@ The dashboard was developed to answer the following business questions:
 
 The dataset contains transaction-level sales information from Maru Footwear.
 
-The analysis focuses on transactions recorded between:
+The analysis covers transactions recorded between:
 
 **1 February – 31 March 2025**
 
@@ -59,7 +61,7 @@ The dataset contains information related to:
 - **Google Looker Studio** — Interactive dashboard and data visualization
 - **Data Cleaning** — Preparing transaction data for analysis
 - **Exploratory Data Analysis (EDA)** — Identifying sales patterns and performance
-- **Business Intelligence** — Translating data into business insights
+- **Business Intelligence** — Translating transaction data into business insights
 
 ---
 
@@ -83,30 +85,36 @@ The interactive dashboard allows users to filter and explore the data by:
 - Unit Price
 - Discount
 
+The **Date Range filter** allows users to dynamically change the analysis period without modifying the dashboard structure.
+
 ---
 
 ## 📌 Key Performance Indicators
 
-The dashboard provides several key performance indicators (KPIs):
+The dashboard provides several key performance indicators (KPIs) that dynamically update based on the selected date range:
 
 | KPI | Description |
 |---|---|
-| **Total Revenue** | Total sales revenue generated during the analysis period |
-| **Total Orders** | Total number of transactions |
-| **Total Quantity Sold** | Total number of products sold |
+| **Total Revenue** | Total sales revenue generated during the selected period |
+| **Total Orders** | Total number of transactions during the selected period |
+| **Total Quantity Sold** | Total number of products sold during the selected period |
 | **Total Refund Value** | Total monetary value of refunded transactions |
 | **Average Order Value (AOV)** | Average revenue generated per order |
 | **Refund Value Rate** | Percentage of revenue represented by refund value |
 
-### March 2025 Performance
+### Example: March 2025 Performance
+
+The following figures represent the dashboard results when the **March 2025** date range is selected:
 
 | Metric | Result |
 |---|---:|
 | Total Revenue | **Rp3.0 Billion** |
 | Total Quantity Sold | **9.2K Units** |
 | Total Refund Value | **Rp39.17 Million** |
-| Average Order Value | **Rp961.96K** |
+| Average Order Value (AOV) | **Rp961.96K** |
 | Refund Value Rate | **1.3%** |
+
+These values will automatically change when users select a different date range.
 
 ---
 
@@ -124,7 +132,7 @@ This visualization helps identify which marketplace generates the largest contri
 ### 2. Daily Revenue Trend
 
 **Purpose:**  
-Analyze daily revenue movement throughout March 2025.
+Analyze daily revenue movement within the selected date range.
 
 The visualization helps identify:
 
@@ -169,7 +177,7 @@ This table allows users to drill down from aggregated performance metrics into i
 
 ## 🔍 Key Findings
 
-Based on the March 2025 analysis:
+The following findings are based on the **March 2025** period selected in the dashboard.
 
 ### Marketplace Performance
 
@@ -183,7 +191,7 @@ The **Formal** category recorded the highest quantity sold among the analyzed pr
 
 ### Refund Performance
 
-The total refund value reached approximately **Rp39.17 million**, representing around **1.3% of total revenue**.
+The total refund value reached approximately **Rp39.17 million**, representing around **1.3% of total revenue** for March 2025.
 
 Although the refund value represents a relatively small portion of total revenue, products or transactions with higher refund values may require further investigation.
 
@@ -257,4 +265,3 @@ maru-footwear-sales-dashboard/
 │
 └── documentation/
     └── analysis.md
-
