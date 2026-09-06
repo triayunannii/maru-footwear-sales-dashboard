@@ -32,7 +32,7 @@ The dataset contains transaction-level sales information from Maru Footwear.
 
 The analysis focuses on transactions recorded between:
 
-**1 March 2025 – 31 March 2025**
+**1 February – 31 March 2025**
 
 The dataset contains information related to:
 
